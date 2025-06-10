@@ -20,7 +20,7 @@ export default defineConfig(() => ({
   test: {
     environment: 'happy-dom',
     globals: true,
-    setupFiles: ['../../src/test-setup.ts'],
+    setupFiles: ['../../config/test-setup.ts'],
   },
   // Uncomment this if you are using workers.
   // worker: {

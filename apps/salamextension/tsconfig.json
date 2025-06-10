@@ -25,5 +25,5 @@
     "tsBuildInfoFile": "../../dist/.tsbuildinfo-salamextension"
   },
   "include": ["src"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts", "src/test-setup.ts"]
+  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts", "../../config/test-setup.ts"]
 }

@@ -9,7 +9,7 @@
     "composite": true,
     "tsBuildInfoFile": "../../dist/.tsbuildinfo-salamextension-spec"
   },
-  "files": ["src/test-setup.ts"],
+  "files": ["../../config/test-setup.ts"],
   "include": [
     "jest.config.ts",
     "src/**/*.test.ts",

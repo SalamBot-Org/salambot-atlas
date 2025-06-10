@@ -22,7 +22,7 @@ export default defineConfig({
     environment: 'jsdom',
 
     // Fichiers de setup
-    setupFiles: ['./src/test-setup.ts'],
+    setupFiles: ['./config/test-setup.ts'],
 
     // Patterns de fichiers de test
     include: [

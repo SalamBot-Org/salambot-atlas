@@ -1,7 +1,7 @@
 export default {
   displayName: 'salamextension',
   preset: '../../jest.preset.js',
-  setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/../../config/test-setup.ts'],
   transform: {
     '^.+\\.[tj]s$': '@swc/jest',
   },
