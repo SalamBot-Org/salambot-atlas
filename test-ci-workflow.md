@@ -12,6 +12,7 @@ Ce fichier a été créé pour tester les workflows CI/CD de SalamBot Atlas.
 ## Workflows Testés
 
 1. **CI Workflow** (`.github/workflows/ci.yml`)
+
    - Setup & Cache
    - Lint (ESLint, Prettier, TypeScript)
    - Test (Unit & Integration avec Vitest)

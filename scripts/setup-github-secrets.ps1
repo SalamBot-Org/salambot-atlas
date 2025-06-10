@@ -291,7 +291,7 @@ Show-SecretCategories
 
 do {
     Write-ColorOutput "`n📝 Sélectionnez les catégories à configurer (séparées par des virgules, ou 'all' pour tout):" "Cyan"
-    $selection = Read-Host "Votre choix (1-6, all, ou 'quit' pour terminer)"
+    $selection = Read-Host "Votre choix (1-6, all, ou `'quit`' pour terminer)"
     
     if ($selection -eq "quit") {
         break
