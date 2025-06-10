@@ -18,6 +18,7 @@
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
+      "exclude": ["."],
       "options": {
         "typecheck": {
           "targetName": "typecheck"
@@ -69,6 +70,7 @@
     },
     {
       "plugin": "@nx/jest/plugin",
+      "exclude": ["."],
       "options": {
         "targetName": "test:jest"
       }
