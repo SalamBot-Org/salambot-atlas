@@ -19,6 +19,8 @@ export default [
       '**/coverage',
       '**/node_modules',
       '**/.nx',
+      '**/vite.config.*.timestamp*',
+      '**/vitest.config.*.timestamp*',
     ],
   },
   ...compat.extends('plugin:@nx/typescript'),

@@ -155,3 +155,10 @@ $RECYCLE.BIN/
 # Fichiers Docker (si nécessaire)
 # Dockerfile.local
 # docker-compose.override.yml
+
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
+
+# Next.js
+.next
+out
