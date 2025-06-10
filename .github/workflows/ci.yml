@@ -185,7 +185,7 @@ jobs:
     needs: setup
     strategy:
       matrix:
-        target: [api, widget, agent-desk, chrome-extension]
+        target: [salamcore, salamwidget, salamportal, salamextension]
     steps:
       - name: 📥 Checkout code
         uses: actions/checkout@v4
