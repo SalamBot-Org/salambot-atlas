@@ -6,13 +6,13 @@
  * @version 1.0.0
  * @created 2024
  * @license MIT
- * 
+ *
  * @requirements
  * - Modern browser with extension API support (Chrome, Firefox, Safari, Edge)
  * - TypeScript support
  * - Vite build system
  * - Web Extension Manifest V3
- * 
+ *
  * @architecture
  * - Background service worker for persistent functionality
  * - Content scripts for page interaction

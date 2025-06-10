@@ -18,7 +18,6 @@
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
-      "exclude": ["."],
       "options": {
         "typecheck": {
           "targetName": "typecheck"

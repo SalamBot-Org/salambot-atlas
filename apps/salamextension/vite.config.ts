@@ -15,7 +15,7 @@ export default defineConfig(() => ({
     host: 'localhost',
   },
   plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
-  
+
   // Configuration Vitest pour les Web Components
   test: {
     environment: 'happy-dom',

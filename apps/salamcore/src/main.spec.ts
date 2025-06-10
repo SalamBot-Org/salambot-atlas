@@ -13,7 +13,9 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to SalamCore API Backend - AI-Powered Customer Support Hub');
+  res.send(
+    'Welcome to SalamCore API Backend - AI-Powered Customer Support Hub'
+  );
 });
 
 describe('SalamCore API', () => {

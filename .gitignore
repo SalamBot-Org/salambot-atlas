@@ -36,6 +36,7 @@ lerna-debug.log*
 # Fichiers temporaires Nx
 tmp/
 .tmp/
+docs/logs
 
 # Rapports Nx
 .nx/reports/

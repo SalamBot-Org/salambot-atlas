@@ -46,7 +46,7 @@ export default [
       '@typescript-eslint/no-inferrable-types': 'off',
       'prefer-const': 'warn',
       'no-var': 'warn',
-      'no-console': 'warn'
+      'no-console': 'warn',
     },
   },
 ];

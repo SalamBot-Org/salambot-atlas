@@ -1,14 +1,14 @@
 name: 🐛 Bug Report
 description: Signaler un bug ou un dysfonctionnement
-title: "[BUG] "
-labels: ["bug", "needs-triage"]
+title: '[BUG] '
+labels: ['bug', 'needs-triage']
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
         Merci de prendre le temps de signaler ce bug. Votre rapport nous aide à améliorer SalamBot.
-        
+
         **Avant de continuer, vérifiez que :**
         - [ ] Vous avez cherché dans les issues existantes
         - [ ] Vous utilisez la dernière version

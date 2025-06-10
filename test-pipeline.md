@@ -24,4 +24,4 @@ Test effectué le : 2024-12-19
 
 ---
 
-*Ce fichier peut être supprimé après validation du pipeline.*
+_Ce fichier peut être supprimé après validation du pipeline._

@@ -6,13 +6,13 @@
  * @version 1.0.0
  * @created 2024
  * @license MIT
- * 
+ *
  * @requirements
  * - Next.js 14+ with App Router
  * - React 18+
  * - TypeScript support
  * - CSS Modules for styling
- * 
+ *
  * @architecture
  * - Component-based architecture for modularity
  * - Responsive design for cross-device compatibility

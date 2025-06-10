@@ -1,14 +1,14 @@
 name: 📚 Documentation
 description: Améliorer ou corriger la documentation
-title: "[DOCS] "
-labels: ["documentation", "good first issue"]
+title: '[DOCS] '
+labels: ['documentation', 'good first issue']
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
         Merci de contribuer à l'amélioration de la documentation de SalamBot !
-        
+
         **Types de contributions documentaires :**
         - Correction d'erreurs ou de typos
         - Clarification d'instructions
@@ -51,7 +51,7 @@ body:
     attributes:
       label: Problème identifié
       description: Quel est le problème avec la documentation actuelle ?
-      placeholder: "La documentation actuelle [...] ce qui cause [...]"
+      placeholder: 'La documentation actuelle [...] ce qui cause [...]'
     validations:
       required: true
 
@@ -60,7 +60,7 @@ body:
     attributes:
       label: Amélioration proposée
       description: Comment améliorer cette documentation ?
-      placeholder: "Je propose de [...] pour que [...]"
+      placeholder: 'Je propose de [...] pour que [...]'
     validations:
       required: true
 
@@ -69,14 +69,14 @@ body:
     attributes:
       label: Public cible
       description: Qui bénéficierait de cette amélioration ?
-      placeholder: "Développeurs débutants, utilisateurs finaux, contributeurs, etc."
+      placeholder: 'Développeurs débutants, utilisateurs finaux, contributeurs, etc.'
 
   - type: textarea
     id: examples
     attributes:
       label: Exemples ou références
       description: Avez-vous des exemples de bonne documentation similaire ?
-      placeholder: "Voir la documentation de [...] qui explique bien [...]"
+      placeholder: 'Voir la documentation de [...] qui explique bien [...]'
 
   - type: checkboxes
     id: contribution

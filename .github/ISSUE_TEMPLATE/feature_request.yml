@@ -1,14 +1,14 @@
 name: ✨ Feature Request
 description: Proposer une nouvelle fonctionnalité ou amélioration
-title: "[FEATURE] "
-labels: ["enhancement", "needs-triage"]
+title: '[FEATURE] '
+labels: ['enhancement', 'needs-triage']
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
         Merci de proposer cette amélioration pour SalamBot ! Votre suggestion nous aide à faire évoluer le projet.
-        
+
         **Avant de continuer, vérifiez que :**
         - [ ] Cette fonctionnalité n'existe pas déjà
         - [ ] Vous avez cherché dans les issues existantes
@@ -19,7 +19,7 @@ body:
     attributes:
       label: Problème ou besoin
       description: Quel problème cette fonctionnalité résoudrait-elle ?
-      placeholder: "Je suis frustré quand [...] parce que [...]"
+      placeholder: 'Je suis frustré quand [...] parce que [...]'
     validations:
       required: true
 
@@ -73,14 +73,14 @@ body:
     attributes:
       label: Détails d'implémentation
       description: Si vous avez des idées sur l'implémentation technique
-      placeholder: "Cette fonctionnalité pourrait être implémentée en [...]"
+      placeholder: 'Cette fonctionnalité pourrait être implémentée en [...]'
 
   - type: textarea
     id: mockups
     attributes:
       label: Maquettes ou exemples
       description: Ajoutez des maquettes, diagrammes ou exemples si pertinent
-      placeholder: "Glissez-déposez vos images ou liens ici..."
+      placeholder: 'Glissez-déposez vos images ou liens ici...'
 
   - type: checkboxes
     id: contribution
