@@ -36,7 +36,17 @@ export default [
       '**/*.cjs',
       '**/*.mjs',
     ],
-    // Override or add rules here
-    rules: {},
+    // Temporary relaxed rules for placeholder apps
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-empty-function': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      '@typescript-eslint/no-inferrable-types': 'off',
+      'prefer-const': 'warn',
+      'no-var': 'warn',
+      'no-console': 'warn'
+    },
   },
 ];

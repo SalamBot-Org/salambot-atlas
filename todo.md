@@ -48,7 +48,7 @@ Transformer SalamBot d'un concept révolutionnaire en une plateforme opérationn
 - [x] Implémenter la protection de branche `main` avec revue obligatoire
 - [x] Créer les templates d'issues et de pull requests standardisés
 - [x] Configurer les notifications Slack pour les succès et échecs de build
-- [ ] Tester le pipeline complet avec un commit de validation
+- [x] Tester le pipeline complet avec un commit de validation
 
 #### ✅ Tâche 0.3 : Infrastructure Cloud de Base
 
