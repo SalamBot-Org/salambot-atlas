@@ -1,0 +1,157 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# ===================================
+# NODE.JS & NPM/PNPM
+# ===================================
+
+# Dossiers de dépendances
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+
+# Fichiers de logs Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Fichiers de cache npm/yarn/pnpm
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===================================
+# NX WORKSPACE
+# ===================================
+
+# Cache Nx
+.nx/cache/
+.nx/workspace-data/
+.nx/installation/
+
+# Fichiers temporaires Nx
+tmp/
+.tmp/
+
+# Rapports Nx
+.nx/reports/
+
+# ===================================
+# TYPESCRIPT & BUILD
+# ===================================
+
+# Fichiers de build TypeScript
+.tsbuildinfo
+*.tsbuildinfo
+dist/
+out-tsc/
+build/
+lib/
+
+# Fichiers TypeScript spécifiques
+*.d.ts.map
+
+# ===================================
+# ENVIRONNEMENT & CONFIGURATION
+# ===================================
+
+# Variables d'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ===================================
+# TESTS & COUVERTURE
+# ===================================
+
+# Couverture de tests
+coverage/
+*.lcov
+.nyc_output/
+jest_coverage/
+
+# Fichiers de tests temporaires
+*.test.js.snap
+
+# ===================================
+# IDE & ÉDITEURS
+# ===================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ===================================
+# SYSTÈME D'EXPLOITATION
+# ===================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ===================================
+# FICHIERS TEMPORAIRES
+# ===================================
+
+# Fichiers temporaires génériques
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# ===================================
+# DÉPLOIEMENT & PRODUCTION
+# ===================================
+
+# Fichiers de déploiement
+.vercel
+.netlify
+
+# Fichiers Docker (si nécessaire)
+# Dockerfile.local
+# docker-compose.override.yml

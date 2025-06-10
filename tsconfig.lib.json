@@ -1,0 +1,52 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    // Configuration spécifique aux bibliothèques
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "outDir": "./dist/libs",
+    "rootDir": "./libs",
+    "tsBuildInfoFile": "./dist/libs/.tsbuildinfo",
+
+    // Règles strictes renforcées pour les libs
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+
+    // Vérifications supplémentaires pour les bibliothèques
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+
+    // Génération de documentation
+    "removeComments": false,
+    "preserveConstEnums": true,
+
+    // Optimisations pour les bibliothèques
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["libs/**/*.ts", "libs/**/*.tsx"],
+  "exclude": [
+    "libs/**/*.spec.ts",
+    "libs/**/*.test.ts",
+    "libs/**/*.spec.tsx",
+    "libs/**/*.test.tsx",
+    "libs/**/node_modules",
+    "libs/**/dist"
+  ]
+}

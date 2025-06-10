@@ -1,0 +1,547 @@
+{
+  "project": {
+    "name": "SalamBot",
+    "description": "Plateforme d'IA conversationnelle spécialisée en Darija marocaine",
+    "repository": "salambot/salambot",
+    "version": "1.0.0",
+    "created_at": "2024-12-19"
+  },
+  "labels": [
+    {
+      "name": "priority/critical",
+      "color": "d73a4a",
+      "description": "Bloquant pour la suite du développement"
+    },
+    {
+      "name": "priority/high",
+      "color": "ff9500",
+      "description": "Important mais pas bloquant"
+    },
+    {
+      "name": "priority/medium",
+      "color": "fbca04",
+      "description": "Peut être reporté si nécessaire"
+    },
+    {
+      "name": "priority/low",
+      "color": "0e8a16",
+      "description": "Nice to have, non prioritaire"
+    },
+    {
+      "name": "type/infrastructure",
+      "color": "1d76db",
+      "description": "Setup, configuration, CI/CD"
+    },
+    {
+      "name": "type/ai",
+      "color": "8b5cf6",
+      "description": "Intelligence artificielle, ML, détection Darija"
+    },
+    {
+      "name": "type/frontend",
+      "color": "06d6a0",
+      "description": "Interface utilisateur, composants UI/UX"
+    },
+    {
+      "name": "type/backend",
+      "color": "f72585",
+      "description": "API, base de données, services backend"
+    },
+    {
+      "name": "type/integration",
+      "color": "ffd60a",
+      "description": "CRM, webhooks, APIs tierces"
+    },
+    {
+      "name": "type/security",
+      "color": "dc2626",
+      "description": "Sécurité, conformité, authentification"
+    },
+    {
+      "name": "type/performance",
+      "color": "059669",
+      "description": "Optimisation, scaling, performance"
+    },
+    {
+      "name": "type/documentation",
+      "color": "6b7280",
+      "description": "Documentation, guides, README"
+    },
+    {
+      "name": "size/xs",
+      "color": "e5e7eb",
+      "description": "1-2 heures de travail"
+    },
+    {
+      "name": "size/s",
+      "color": "d1d5db",
+      "description": "1 jour de travail"
+    },
+    {
+      "name": "size/m",
+      "color": "9ca3af",
+      "description": "2-3 jours de travail"
+    },
+    {
+      "name": "size/l",
+      "color": "6b7280",
+      "description": "1 semaine de travail"
+    },
+    {
+      "name": "size/xl",
+      "color": "374151",
+      "description": "2+ semaines de travail"
+    }
+  ],
+  "epics": [
+    {
+      "id": "epic-1",
+      "title": "📋 Epic 1: Fondations et Infrastructure",
+      "description": "Mise en place de l'infrastructure de base, monorepo Nx, CI/CD et bibliothèques fondamentales",
+      "status": "planned",
+      "priority": "critical",
+      "estimated_duration": "4 semaines"
+    },
+    {
+      "id": "epic-2",
+      "title": "📋 Epic 2: Intelligence Artificielle Core",
+      "description": "Développement du cœur IA avec détection Darija et intégration Genkit",
+      "status": "planned",
+      "priority": "critical",
+      "estimated_duration": "8 semaines"
+    },
+    {
+      "id": "epic-3",
+      "title": "📋 Epic 3: Applications Principales",
+      "description": "Développement des applications Functions-Run, Widget-Web et Agent-Desk",
+      "status": "planned",
+      "priority": "high",
+      "estimated_duration": "12 semaines"
+    },
+    {
+      "id": "epic-4",
+      "title": "📋 Epic 4: Intégrations Avancées",
+      "description": "Extension Chrome, Kong Gateway et intégrations CRM",
+      "status": "planned",
+      "priority": "medium",
+      "estimated_duration": "12 semaines"
+    },
+    {
+      "id": "epic-5",
+      "title": "📋 Epic 5: Optimisation et Scaling",
+      "description": "Optimisation performance, sécurité et conformité",
+      "status": "planned",
+      "priority": "medium",
+      "estimated_duration": "8 semaines"
+    },
+    {
+      "id": "epic-6",
+      "title": "📋 Epic 6: Déploiement et Maintenance",
+      "description": "Déploiement production et mise en place de la maintenance",
+      "status": "planned",
+      "priority": "high",
+      "estimated_duration": "4 semaines"
+    }
+  ],
+  "issues": [
+    {
+      "id": "issue-1",
+      "title": "Configuration Monorepo Nx",
+      "epic_id": "epic-1",
+      "description": "Initialiser le monorepo Nx avec la structure complète et les outils de développement.",
+      "labels": ["priority/critical", "type/infrastructure", "size/m"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": [],
+      "tasks": [
+        "Créer monorepo `salambot-atlas` avec Node.js 22 et pnpm 10.11.1",
+        "Configurer Nx 21.1.2 avec cache intelligent",
+        "Structure dossiers `apps/` et `libs/`",
+        "TypeScript 5.8.3 avec mode strict",
+        "ESLint + Prettier",
+        "README principal"
+      ],
+      "acceptance_criteria": [
+        "✅ `nx build` fonctionne",
+        "✅ Linting passe sans erreur",
+        "✅ Structure conforme à l'architecture"
+      ],
+      "estimated_hours": 24
+    },
+    {
+      "id": "issue-2",
+      "title": "Pipeline CI/CD GitHub Actions",
+      "epic_id": "epic-1",
+      "description": "Configurer l'intégration continue avec tests automatisés et déploiement.",
+      "labels": ["priority/critical", "type/infrastructure", "size/m"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-1"],
+      "tasks": [
+        "Workflow `.github/workflows/ci.yml`",
+        "Jobs parallèles: lint, test, build",
+        "Cache Nx optimisé",
+        "Secrets GitHub configurés",
+        "Protection branche `main`"
+      ],
+      "acceptance_criteria": [
+        "✅ Pipeline passe sur PR",
+        "✅ Tests automatiques",
+        "✅ Notifications configurées"
+      ],
+      "estimated_hours": 20
+    },
+    {
+      "id": "issue-3",
+      "title": "Infrastructure Cloud Base",
+      "epic_id": "epic-1",
+      "description": "Configurer l'infrastructure cloud de base sur GCP.",
+      "labels": ["priority/critical", "type/infrastructure", "size/l"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-1"],
+      "tasks": [
+        "Projet GCP `salambot-prod`",
+        "APIs activées: Cloud Run, Firestore, Storage",
+        "Comptes de service",
+        "Cloudflare pour domaines",
+        "Redis Cloud",
+        "Grafana Cloud"
+      ],
+      "acceptance_criteria": [
+        "✅ Environnements dev/staging/prod",
+        "✅ Monitoring opérationnel",
+        "✅ Domaines configurés"
+      ],
+      "estimated_hours": 40
+    },
+    {
+      "id": "issue-4",
+      "title": "Bibliothèque Core",
+      "epic_id": "epic-1",
+      "description": "Créer la bibliothèque core avec modèles de données et utilitaires.",
+      "labels": ["priority/critical", "type/backend", "size/m"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-1"],
+      "tasks": [
+        "Générer `libs/core`",
+        "Modèles TypeScript (User, Session, Message)",
+        "Validation avec Zod",
+        "Constantes et configurations",
+        "Patterns Repository/Factory",
+        "Types d'erreur standardisés"
+      ],
+      "acceptance_criteria": [
+        "✅ Types exportés correctement",
+        "✅ Validation fonctionne",
+        "✅ Tests unitaires >85%"
+      ],
+      "estimated_hours": 24
+    },
+    {
+      "id": "issue-5",
+      "title": "Détection Darija Offline",
+      "epic_id": "epic-2",
+      "description": "Implementer l'algorithme de détection Darija offline avec >88% de précision.",
+      "labels": ["priority/critical", "type/ai", "size/xl"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-4"],
+      "tasks": [
+        "Générer `libs/ai/lang-detect`",
+        "Algorithme n-grammes optimisé",
+        "Dictionnaire 2000+ expressions Darija",
+        "Gestion bi-script (arabe/latin)",
+        "Variations régionales marocaines",
+        "Système de scoring avec seuils",
+        "Code-switching arabe/français/anglais",
+        "Optimisation <15ms"
+      ],
+      "acceptance_criteria": [
+        "✅ Précision >88% sur dataset test",
+        "✅ Performance <15ms P95",
+        "✅ Support variations régionales",
+        "✅ Tests automatisés complets"
+      ],
+      "estimated_hours": 80
+    },
+    {
+      "id": "issue-6",
+      "title": "Intégration Genkit AI",
+      "epic_id": "epic-2",
+      "description": "Configurer Genkit v1.x avec stratégie de fallback multi-provider.",
+      "labels": ["priority/critical", "type/ai", "size/l"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-5", "issue-3"],
+      "tasks": [
+        "Configuration Genkit v1.x",
+        "Providers: Vertex AI, OpenAI, Anthropic",
+        "Flow détection hybride",
+        "Logique seuils: >95% offline, 75-95% hybride, <75% cloud",
+        "Système fallback résilient",
+        "Observabilité OpenTelemetry",
+        "Cache Redis intelligent"
+      ],
+      "acceptance_criteria": [
+        "✅ Fallback automatique fonctionne",
+        "✅ Métriques temps réel",
+        "✅ Disponibilité >99.8%"
+      ],
+      "estimated_hours": 40
+    },
+    {
+      "id": "issue-7",
+      "title": "Application Functions-Run",
+      "epic_id": "epic-3",
+      "description": "Développer l'API backend centrale avec flows Genkit.",
+      "labels": ["priority/critical", "type/backend", "size/xl"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-6", "issue-3"],
+      "tasks": [
+        "App Node.js/Express",
+        "Docker multi-stage",
+        "Authentification JWT",
+        "Middlewares sécurité",
+        "Endpoints API REST",
+        "Intégration Kong Gateway",
+        "Observabilité complète",
+        "Déploiement Cloud Run"
+      ],
+      "acceptance_criteria": [
+        "✅ API documentée OpenAPI",
+        "✅ Tests E2E passent",
+        "✅ Déploiement automatique",
+        "✅ Monitoring opérationnel"
+      ],
+      "estimated_hours": 80
+    },
+    {
+      "id": "issue-8",
+      "title": "Widget Web Intégration",
+      "epic_id": "epic-3",
+      "description": "Créer le widget web pour intégration sur sites clients.",
+      "labels": ["priority/high", "type/frontend", "size/l"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-7"],
+      "tasks": [
+        "App Next.js 15 + React 19",
+        "Composant chat responsive",
+        "Adaptation design automatique",
+        "Mode offline + sync différée",
+        "Détection langue auto",
+        "Historique conversations",
+        "Notifications push",
+        "Optimisations performance"
+      ],
+      "acceptance_criteria": [
+        "✅ Intégration 1 ligne JS",
+        "✅ Responsive tous appareils",
+        "✅ Performance <100ms FCP"
+      ],
+      "estimated_hours": 40
+    },
+    {
+      "id": "issue-9",
+      "title": "Agent-Desk Interface",
+      "epic_id": "epic-3",
+      "description": "Interface de gestion pour agents humains et administrateurs.",
+      "labels": ["priority/high", "type/frontend", "size/xl"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-7"],
+      "tasks": [
+        "Migration Vite → Next.js 15",
+        "Tailwind CSS 4 + shadcn/ui",
+        "Dashboard temps réel",
+        "Gestion conversations",
+        "Analytics et rapports",
+        "Intervention humaine",
+        "Authentification Firebase",
+        "Déploiement Vercel"
+      ],
+      "acceptance_criteria": [
+        "✅ Dashboard fonctionnel",
+        "✅ Prise contrôle conversations",
+        "✅ Rapports automatisés"
+      ],
+      "estimated_hours": 80
+    },
+    {
+      "id": "issue-10",
+      "title": "Extension Chrome CRM",
+      "epic_id": "epic-4",
+      "description": "Extension Chrome pour intégration non-intrusive avec CRM existants.",
+      "labels": ["priority/high", "type/integration", "size/xl"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-7"],
+      "tasks": [
+        "Extension Manifest V3",
+        "Détection auto plateformes CRM",
+        "Injection suggestions intelligentes",
+        "3 modes: Observation/Assistance/Automatisation",
+        "Apprentissage adaptatif",
+        "Sync API SalamBot",
+        "Interface configuration",
+        "Tests Salesforce/HubSpot/Zendesk"
+      ],
+      "acceptance_criteria": [
+        "✅ Fonctionne sur 3 CRM majeurs",
+        "✅ Adoption progressive",
+        "✅ Apprentissage effectif"
+      ],
+      "estimated_hours": 80
+    },
+    {
+      "id": "issue-11",
+      "title": "Kong Gateway Configuration",
+      "epic_id": "epic-4",
+      "description": "Déployer Kong Gateway pour gestion centralisée des APIs.",
+      "labels": ["priority/medium", "type/infrastructure", "size/l"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-3", "issue-7"],
+      "tasks": [
+        "Déploiement Kong sur GCP",
+        "PostgreSQL cluster",
+        "Authentification centralisée JWT",
+        "Rate limiting adaptatif",
+        "Monitoring Prometheus/Grafana",
+        "Certificats SSL auto",
+        "Load balancing intelligent",
+        "Tests charge"
+      ],
+      "acceptance_criteria": [
+        "✅ Haute disponibilité",
+        "✅ Performance optimale",
+        "✅ Sécurité renforcée"
+      ],
+      "estimated_hours": 40
+    },
+    {
+      "id": "issue-12",
+      "title": "Optimisation IA Performance",
+      "epic_id": "epic-5",
+      "description": "Optimiser les performances et coûts de l'IA.",
+      "labels": ["priority/medium", "type/ai", "size/l"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-6", "issue-7"],
+      "tasks": [
+        "Fine-tuning modèles données marocaines",
+        "Optimisation prompts (réduction tokens)",
+        "Compression modèles edge computing",
+        "Cache prédictif avancé",
+        "Auto-optimisation seuils confiance",
+        "Apprentissage continu feedback",
+        "Parallélisation requêtes IA"
+      ],
+      "acceptance_criteria": [
+        "✅ Réduction coûts >30%",
+        "✅ Performance améliorée",
+        "✅ Précision maintenue"
+      ],
+      "estimated_hours": 40
+    },
+    {
+      "id": "issue-13",
+      "title": "Sécurité et Conformité",
+      "epic_id": "epic-5",
+      "description": "Implementer sécurité avancée et conformité RGPD/Loi 09-08.",
+      "labels": ["priority/high", "type/security", "size/xl"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-7", "issue-8", "issue-9"],
+      "tasks": [
+        "Chiffrement end-to-end",
+        "Détection intrusion ML",
+        "Authentification multi-facteur",
+        "Rotation automatique secrets",
+        "Audits sécurité automatisés",
+        "Protection DDoS avancée",
+        "Consentement granulaire RGPD",
+        "Droit à l'oubli automatisé"
+      ],
+      "acceptance_criteria": [
+        "✅ Conformité RGPD validée",
+        "✅ Audit sécurité externe passé",
+        "✅ Certifications obtenues"
+      ],
+      "estimated_hours": 80
+    },
+    {
+      "id": "issue-14",
+      "title": "Déploiement Production",
+      "epic_id": "epic-6",
+      "description": "Déploiement final en production avec monitoring complet.",
+      "labels": ["priority/critical", "type/infrastructure", "size/l"],
+      "assignee": null,
+      "status": "todo",
+      "dependencies": ["issue-13"],
+      "tasks": [
+        "Tests charge et sécurité finaux",
+        "Runbooks opérationnels",
+        "Formation équipes support",
+        "Environnements production finaux",
+        "Procédures rollback automatique",
+        "Documentation utilisateur",
+        "Métriques business intelligence"
+      ],
+      "acceptance_criteria": [
+        "✅ Production stable",
+        "✅ Support 24/7 opérationnel",
+        "✅ Métriques business actives"
+      ],
+      "estimated_hours": 40
+    }
+  ],
+  "roadmap": {
+    "sprints": [
+      {
+        "id": "sprint-1-2",
+        "name": "Fondations",
+        "duration": "4 semaines",
+        "issues": ["issue-1", "issue-2", "issue-3", "issue-4"]
+      },
+      {
+        "id": "sprint-3-6",
+        "name": "IA Core",
+        "duration": "8 semaines",
+        "issues": ["issue-5", "issue-6"]
+      },
+      {
+        "id": "sprint-7-12",
+        "name": "Applications",
+        "duration": "12 semaines",
+        "issues": ["issue-7", "issue-8", "issue-9"]
+      },
+      {
+        "id": "sprint-13-18",
+        "name": "Intégrations",
+        "duration": "12 semaines",
+        "issues": ["issue-10", "issue-11", "issue-12"]
+      },
+      {
+        "id": "sprint-19-24",
+        "name": "Production",
+        "duration": "12 semaines",
+        "issues": ["issue-13", "issue-14"]
+      }
+    ]
+  },
+  "metadata": {
+    "total_estimated_hours": 728,
+    "total_estimated_weeks": 48,
+    "last_updated": "2024-12-19",
+    "version": "1.0.0",
+    "automation": {
+      "github_sync": true,
+      "auto_update": true,
+      "webhook_url": null
+    }
+  }
+}
