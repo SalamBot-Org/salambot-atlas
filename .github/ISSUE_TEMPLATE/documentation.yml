@@ -1,0 +1,104 @@
+name: 📚 Documentation
+description: Améliorer ou corriger la documentation
+title: "[DOCS] "
+labels: ["documentation", "good first issue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de contribuer à l'amélioration de la documentation de SalamBot !
+        
+        **Types de contributions documentaires :**
+        - Correction d'erreurs ou de typos
+        - Clarification d'instructions
+        - Ajout d'exemples
+        - Traduction
+        - Nouveaux guides ou tutoriels
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de contribution
+      description: Quel type d'amélioration documentaire ?
+      options:
+        - Correction d'erreur/typo
+        - Clarification d'instructions existantes
+        - Ajout d'exemples
+        - Nouveau guide/tutoriel
+        - Amélioration de la structure
+        - Traduction
+        - Mise à jour technique
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: Emplacement
+      description: Où se trouve la documentation à améliorer ?
+      placeholder: |
+        - Fichier: README.md, docs/guide.md, etc.
+        - Section: Installation, Configuration, API, etc.
+        - Ligne: si applicable
+        - URL: si documentation en ligne
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problème identifié
+      description: Quel est le problème avec la documentation actuelle ?
+      placeholder: "La documentation actuelle [...] ce qui cause [...]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Amélioration proposée
+      description: Comment améliorer cette documentation ?
+      placeholder: "Je propose de [...] pour que [...]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Public cible
+      description: Qui bénéficierait de cette amélioration ?
+      placeholder: "Développeurs débutants, utilisateurs finaux, contributeurs, etc."
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Exemples ou références
+      description: Avez-vous des exemples de bonne documentation similaire ?
+      placeholder: "Voir la documentation de [...] qui explique bien [...]"
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Comment souhaitez-vous contribuer ?
+      options:
+        - label: Je peux rédiger cette amélioration
+        - label: Je peux relire et valider
+        - label: Je peux fournir des exemples
+        - label: Je peux traduire
+        - label: Je signale juste le problème
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Impact
+      description: Quel est l'impact de ce problème documentaire ?
+      options:
+        - Critique (bloque l'utilisation)
+        - Important (cause des confusions fréquentes)
+        - Modéré (amélioration notable)
+        - Mineur (amélioration cosmétique)
+    validations:
+      required: true

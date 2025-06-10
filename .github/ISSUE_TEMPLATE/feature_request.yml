@@ -1,0 +1,94 @@
+name: ✨ Feature Request
+description: Proposer une nouvelle fonctionnalité ou amélioration
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de proposer cette amélioration pour SalamBot ! Votre suggestion nous aide à faire évoluer le projet.
+        
+        **Avant de continuer, vérifiez que :**
+        - [ ] Cette fonctionnalité n'existe pas déjà
+        - [ ] Vous avez cherché dans les issues existantes
+        - [ ] Cette demande correspond aux objectifs du projet
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problème ou besoin
+      description: Quel problème cette fonctionnalité résoudrait-elle ?
+      placeholder: "Je suis frustré quand [...] parce que [...]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution proposée
+      description: Décrivez la solution que vous aimeriez voir implémentée
+      placeholder: "J'aimerais que [...] pour que [...]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considérées
+      description: Avez-vous pensé à d'autres solutions ?
+      placeholder: "J'ai aussi pensé à [...] mais [...]"
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Composant concerné
+      description: Quel composant de SalamBot serait impacté ?
+      options:
+        - SalamCore (logique métier)
+        - SalamExtension (extension navigateur)
+        - SalamPortal (interface web)
+        - SalamWidget (widget intégrable)
+        - Infrastructure (CI/CD, déploiement)
+        - Documentation
+        - Autre
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité suggérée
+      description: Quelle priorité donneriez-vous à cette fonctionnalité ?
+      options:
+        - Critique (bloque l'utilisation)
+        - Haute (amélioration majeure)
+        - Moyenne (amélioration utile)
+        - Basse (nice-to-have)
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Détails d'implémentation
+      description: Si vous avez des idées sur l'implémentation technique
+      placeholder: "Cette fonctionnalité pourrait être implémentée en [...]"
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Maquettes ou exemples
+      description: Ajoutez des maquettes, diagrammes ou exemples si pertinent
+      placeholder: "Glissez-déposez vos images ou liens ici..."
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Seriez-vous intéressé(e) pour contribuer à cette fonctionnalité ?
+      options:
+        - label: Je serais intéressé(e) pour travailler sur cette fonctionnalité
+        - label: Je peux aider avec la conception/spécification
+        - label: Je peux aider avec les tests
+        - label: Je peux aider avec la documentation

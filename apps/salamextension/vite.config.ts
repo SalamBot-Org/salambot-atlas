@@ -15,6 +15,13 @@ export default defineConfig(() => ({
     host: 'localhost',
   },
   plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
+  
+  // Configuration Vitest pour les Web Components
+  test: {
+    environment: 'happy-dom',
+    globals: true,
+    setupFiles: ['../../src/test-setup.ts'],
+  },
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],

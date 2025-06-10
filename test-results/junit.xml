@@ -1,3 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="0" failures="0" errors="0" time="0">
+<testsuites name="vitest tests" tests="7" failures="0" errors="0" time="0.698837">
+    <testsuite name="apps/salamcore/src/main.spec.ts" timestamp="2025-06-10T11:14:42.465Z" hostname="DESKTOP-AQUF66L" tests="2" failures="0" errors="0" skipped="0" time="0.0554849">
+        <testcase classname="apps/salamcore/src/main.spec.ts" name="SalamCore API &gt; should respond to health check" time="0.0442886">
+        </testcase>
+        <testcase classname="apps/salamcore/src/main.spec.ts" name="SalamCore API &gt; should respond to root endpoint" time="0.0088632">
+        </testcase>
+    </testsuite>
+    <testsuite name="apps/salamportal/src/app/app.spec.tsx" timestamp="2025-06-10T11:14:42.470Z" hostname="DESKTOP-AQUF66L" tests="2" failures="0" errors="0" skipped="0" time="0.4890411">
+        <testcase classname="apps/salamportal/src/app/app.spec.tsx" name="App &gt; should render successfully" time="0.3238427">
+        </testcase>
+        <testcase classname="apps/salamportal/src/app/app.spec.tsx" name="App &gt; should have a greeting as the title" time="0.1604076">
+            <system-err>
+To match all elements we had to reset the lastIndex of the RegExp because the global flag is enabled. We encourage to remove the global flag from the RegExp.
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="apps/salamextension/src/app/app.element.spec.ts" timestamp="2025-06-10T11:14:42.472Z" hostname="DESKTOP-AQUF66L" tests="2" failures="0" errors="0" skipped="0" time="0.043236">
+        <testcase classname="apps/salamextension/src/app/app.element.spec.ts" name="AppElement &gt; should create successfully" time="0.0045108">
+        </testcase>
+        <testcase classname="apps/salamextension/src/app/app.element.spec.ts" name="AppElement &gt; should have a greeting" time="0.0359021">
+        </testcase>
+    </testsuite>
+    <testsuite name="apps/salamwidget/specs/index.spec.tsx" timestamp="2025-06-10T11:14:42.473Z" hostname="DESKTOP-AQUF66L" tests="1" failures="0" errors="0" skipped="0" time="0.111075">
+        <testcase classname="apps/salamwidget/specs/index.spec.tsx" name="Page &gt; should render successfully" time="0.1061341">
+        </testcase>
+    </testsuite>
 </testsuites>

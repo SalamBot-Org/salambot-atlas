@@ -11,6 +11,13 @@ export default defineConfig({
 
   // Configuration Vitest
   test: {
+    // Configuration des projets (remplace workspace file déprécié)
+    projects: [
+      'apps/*/vite.config.{mjs,js,ts,mts}',
+      'apps/*/vitest.config.{mjs,js,ts,mts}',
+      'libs/*/vite.config.{mjs,js,ts,mts}',
+      'libs/*/vitest.config.{mjs,js,ts,mts}',
+    ],
     // Environnement de test
     environment: 'jsdom',
 
@@ -81,10 +88,8 @@ export default defineConfig({
       junit: './test-results/junit.xml',
     },
 
-    // Configuration du cache
-    cache: {
-      dir: './node_modules/.vitest',
-    },
+    // Configuration du cache (utilise cacheDir de Vite)
+    // Note: Le cache est maintenant géré par cacheDir au niveau racine
 
     // Configuration des workers
     pool: 'threads',

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   displayName: 'salamcore',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',

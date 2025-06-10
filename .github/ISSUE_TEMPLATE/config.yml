@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/salambot/salambot-atlas/discussions
+    about: Pour les questions générales, idées et discussions communautaires
+  - name: 🔒 Sécurité
+    url: mailto:security@salambot.dev
+    about: Pour signaler des vulnérabilités de sécurité (confidentiel)
+  - name: 📖 Documentation
+    url: https://docs.salambot.dev
+    about: Consulter la documentation complète du projet
+  - name: 💡 Support
+    url: https://github.com/salambot/salambot-atlas/discussions/categories/support
+    about: Obtenir de l'aide de la communauté

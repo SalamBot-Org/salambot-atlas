@@ -6,7 +6,7 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -16,15 +16,14 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "declaration": false,
+    "declarationMap": false,
+    "declarationDir": null,
+    "emitDeclarationOnly": false,
+    "composite": false,
+    "tsBuildInfoFile": "../../dist/.tsbuildinfo-salamextension"
   },
   "include": ["src"],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ]
+  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts", "src/test-setup.ts"]
 }

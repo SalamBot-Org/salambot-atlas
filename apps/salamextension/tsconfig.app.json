@@ -2,7 +2,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
-    "types": ["node"]
+    "types": ["node"],
+    "noEmit": false,
+    "composite": true,
+    "tsBuildInfoFile": "../../dist/.tsbuildinfo-salamextension-app"
   },
   "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts", "jest.config.ts"],
   "include": ["src/**/*.ts"]

@@ -21,13 +21,13 @@
 
 import express from 'express';
 
-const host = process.env.HOST ?? 'localhost';
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+const host = process.env['HOST'] ?? 'localhost';
+const port = process.env['PORT'] ? Number(process.env['PORT']) : 3000;
 
 const app = express();
 
 // Route de sante pour les checks de deploiement
-app.get('/health', (req, res) => {
+app.get('/health', (_req, res) => {
   res.status(200).json({ 
     status: 'healthy',
     service: 'SalamCore',
@@ -37,7 +37,7 @@ app.get('/health', (req, res) => {
 });
 
 // Route principale temporaire
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.json({ 
     message: "SalamCore API Backend - Placeholder",
     description: "API principale pour SalamBot",

@@ -45,9 +45,9 @@ Transformer SalamBot d'un concept révolutionnaire en une plateforme opérationn
 - [x] Configurer la matrice Node.js 22 avec cache Nx pour optimiser les performances
 - [x] Intégrer Vitest pour les tests avec couverture de code automatique
 - [x] Configurer les secrets GitHub pour les variables d'environnement sensibles
-- [ ] Implémenter la protection de branche `main` avec revue obligatoire
-- [ ] Créer les templates d'issues et de pull requests standardisés
-- [ ] Configurer les notifications Slack pour les succès et échecs de build
+- [x] Implémenter la protection de branche `main` avec revue obligatoire
+- [x] Créer les templates d'issues et de pull requests standardisés
+- [x] Configurer les notifications Slack pour les succès et échecs de build
 - [ ] Tester le pipeline complet avec un commit de validation
 
 #### ✅ Tâche 0.3 : Infrastructure Cloud de Base
